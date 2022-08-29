@@ -15,12 +15,38 @@ a {
   box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+html {
+  color-scheme: dark;
 }
+body {
+  color: white;
+  background: rgb(43, 42, 42);
+}
+.toggle-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 50%;
+  padding: 0.5rem 0.5rem;
+  background-color: #a5f3ca;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+.toggle-button:hover {
+  background-color: #00A651;
+  color: white;
+}
+.toggle-button.dark {
+  color: rgb(48, 48, 48);
+}
+.toggle-button.light {
+  color: rgb(0, 0, 0);
+}
+.icon2 {
+  width: 1.5rem;
+}
+
+
+
+
