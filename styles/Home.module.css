@@ -41,7 +41,6 @@
   flex-direction: column;
   flex: 1;
   padding: 1rem 10rem;
-  border-top: 1px solid #eaeaea;
   justify-content: space-around;
   align-items: center;
   z-index: 6;
@@ -176,15 +175,3 @@
   }
 }
 
-@media (prefers-color-scheme: dark) {
-  .card,
-  .footer {
-    border-color: #222;
-  }
-  .code {
-    background: #111;
-  }
-  .logo img {
-    filter: invert(1);
-  }
-}
