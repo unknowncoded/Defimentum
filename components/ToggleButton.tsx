@@ -9,15 +9,17 @@ const ToggleButton = () => {
         setIsDark(!isDark)
         let htmlEle = document.getElementsByTagName('html')[0];
         let bodyEle = document.getElementsByTagName('body')[0];
-        let headerEle = document.getElementsByTagName('header')[0];
+        let meta: Element | null = document.querySelector('meta[name="theme-color"]')
         if (isDark) {
             htmlEle.style.colorScheme = 'light';
             bodyEle.style.color = 'black';
             bodyEle.style.backgroundColor = '#f3f3f3';
+            meta?.setAttribute("content", '#ffffff');
         }else {
             htmlEle.style.colorScheme = 'dark';
             bodyEle.style.color = '#f3f3f3';
-            bodyEle.style.backgroundColor = 'rgb(43, 42, 42)'
+            bodyEle.style.backgroundColor = 'rgb(43, 42, 42)';
+            meta?.setAttribute("content", '#000000');
         }
     };
     return (
