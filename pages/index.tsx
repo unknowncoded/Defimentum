@@ -17,7 +17,7 @@ const Home: NextPage = () => {
               <ToggleButton/>
         </nav>
         <main className={styles.main}>
-          <div className='hero'>
+          <div className={styles.hero}>
             <h1 className={styles.title}>
             We give momentum to <span>De-Fi Products</span>
             </h1>
@@ -27,13 +27,9 @@ const Home: NextPage = () => {
           </div>
           <div className={styles.image_cont}>
             <span className={styles.circle}></span>
-            <Image priority className={styles.image} src={hero} layout='responsive'  alt="Vercel Logo"/>
+            <Image priority={true} className={styles.image} src={hero} layout='responsive'  alt="Vercel Logo"/>
           </div>
-
-          
-
         </main>
-        
       </header>
       <footer className={styles.footer}>
         <div>
@@ -51,7 +47,7 @@ const Home: NextPage = () => {
         <div className={styles.copy}>
           <h4>Defimentum</h4>
           <small>&copy; 2022 defimentum. All Right Reserved</small>
-            <span>Follow us on <a className={styles.icon} href="https://twitter.com"><FontAwesomeIcon icon={faTwitter} /></a></span>
+          <span>Follow us on <a className={styles.icon} href="https://twitter.com"><FontAwesomeIcon icon={faTwitter} /></a></span>
         </div>
         <hr />
       </footer>
