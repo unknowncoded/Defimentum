@@ -10,6 +10,9 @@ import ToggleButton from '../components/ToggleButton';
 const Home: NextPage = () => {
   return (
     <div className={styles.container}>
+      <head>
+        <title>Defimentum</title>
+      </head>
       <header className={styles.header}>
         <nav className={styles.nav}>
             <div className={styles.logo}> 
